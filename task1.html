@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate Labs | Responsive Landing Page</title>
+  
+  <style>
+    /* 🌈 Reset and Basic Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f8f9fc;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* 🌟 Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 60px;
+      background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .logo span {
+      color: #f97316;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+
+    /* 💫 Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .cta-btn {
+      background-color: #f97316;
+      border: none;
+      padding: 14px 36px;
+      font-size: 1rem;
+      color: white;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #ea580c;
+      transform: scale(1.05);
+    }
+
+    /* 🧩 About Section */
+    .about {
+      padding: 80px 60px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* ⚙️ Services Section */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 80px 40px;
+      background-color: #eef2ff;
+    }
+
+    .service-box {
+      background-color: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .service-box h3 {
+      color: #1e3a8a;
+      margin-bottom: 12px;
+    }
+
+    /* 🔗 Footer */
+    footer {
+      background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .social-links a {
+      color: #f97316;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .social-links a:hover {
+      opacity: 0.7;
+    }
+
+    /* 📱 Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px;
+        display: inline-block;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Elevate<span>Labs</span></div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Build Your Future With Elevate Labs</h1>
+    <p>Join our internship program to master responsive web design using HTML, CSS, and Flexbox — and step into the world of modern web development!</p>
+    <button class="cta-btn">Get Started</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About the Program</h2>
+    <p>Our internship focuses on practical learning — from creating your first responsive landing page to understanding layouts, grids, and modern CSS design principles. You’ll learn to craft beautiful, user-friendly websites that adapt to all screen sizes.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="service-box">
+      <h3>Responsive Design</h3>
+      <p>Learn to make websites that look perfect on every device — from mobiles to desktops.</p>
+    </div>
+    <div class="service-box">
+      <h3>HTML5 & CSS3</h3>
+      <p>Build structured, semantic, and visually appealing web pages with HTML5 and CSS3.</p>
+    </div>
+    <div class="service-box">
+      <h3>Flexbox & Grid</h3>
+      <p>Understand layout systems that make web design faster, easier, and more flexible.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2025 Elevate Labs | Designed by Aniket ✨</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
